@@ -1385,6 +1385,12 @@ nav a:hover::after { width:100%; }
     color: var(--text);
 }
 
+.intro-text blockquote::before {
+    content: "→ ";
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+}
+
 .intro-points {
     list-style: none;
     padding: 0;
@@ -2197,23 +2203,29 @@ ul.benefits li.ref::before {
 .role-financement-card {
     display: flex;
     gap: 2rem;
-    align-items: stretch;
-    background: rgba(10,16,36,0.0); /* transparent, laisse voir les cartes internes */
+    align-items: stretch; /* force les colonnes à avoir la même hauteur */
+    background: rgba(10,16,36,0.0);
 }
 
 .role-approche-card {
-    flex: 0 0 57%;
+    flex: 0 0 64%;
     background: rgba(10, 16, 36, 0.9);
     border-radius: var(--radius);
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .right-column {
-    flex: 0 0 40%;
+    flex: 0 0 36%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    justify-content: flex-start;
+}
+
+.illustration {
+    flex: 1; /* prend toute la hauteur */
+    display: flex;
+    height: 100%; /* clé pour égaliser */
 }
 
 .illustration img {
