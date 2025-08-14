@@ -236,7 +236,7 @@
                         <h3 class="formule-nom">Formule Speed</h3>
                         <p class="formule-prix">1 300 €</p>
                         <ul class="benefits">
-                            <li>24h max dont 10h en RDV personnalisé (hors temps de suivi).</li>
+                            <li>18h max dont 10h en RDV personnalisé (hors temps de suivi).</li>
                             <li>Remise d’une synthèse.</li>
                             <li class="synthese">Finançable CPF (selon votre solde) ou autofinancement (5x sans frais)...</li>
                         </ul>
@@ -404,9 +404,10 @@
             <div class="bilan-grid two-columns">
                 <div class="bilan-card">
                     <img src="img-delais.png" alt="Délais d'accès">
-                    <h3>Délais d’accès</h3>
+                    <h3>Modalités et délais d’accès</h3>
                     <ul>
-                        <li>Rappel sous 10 jours max (objectif 1h à 48h).</li>
+                        <li>Les délais d'accès à la prestation sont en moyenne de 1 à 2 jours ouvrés après la demande initiale. Un rappel est garanti sous 10 jours maximum.</li>
+                        <li>Entretien préalable obligatoire avant toute inscription.</li>
                         <li>Entretien offert avant inscription d'une durée de 30 minutes à 1 heure : faire connaissance, déterminer si le bilan vous sera utile, évoquer les formules et l'aspect financement.</li>
                         <li><strong>Droit de rétractation</strong> : 10 jours pour les autres financements, 14 jours pour le CPF.</li>
                     </ul>
@@ -463,6 +464,21 @@
                 *(3) Avancement au 12/08/2025 : questionnaire post-bilan (6 mois), 0.00% des clients ont répondu NON à la question : Le bilan de compétences vous a-t-il été utile ?
                 <br><br>
                 Les indicateurs sont collectés via un questionnaire en ligne à la fin du bilan et à 6 mois. En cas de baisse significative, un plan d’amélioration est déclenché.
+                <br><br>
+                <!-- Lien -->
+                Indicateur de résultats du bilan de compétences visualisables en cliquant
+                <a href="#" id="open-graph">ici</a>.
+
+                <!-- Popup Graph -->
+                <div id="popup-graph" class="popup-overlay">
+                    <div class="popup-content graph-popup">
+                        <span class="close-btn">&times;</span>
+                        <h3 id="graph-title"></h3>
+                        <p>(Échantillon de 32 personnes, mis à jour 14 août 2025)</p>
+                        <canvas id="statsChart"></canvas>
+                        <button id="next-graph" class="next-btn">➜</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -473,5 +489,10 @@
     <p>&copy; 2025 Amélie Riche - Conseil Formation Coach Pro. Tous droits réservés.</p>
     <a href="mentions-legales.html" class="mentions-link">Mentions légales</a>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+<script src="popup.js"></script>
+<script src="chart.js"></script>
 </body>
 </html>

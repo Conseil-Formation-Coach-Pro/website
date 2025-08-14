@@ -5,6 +5,8 @@ const openHoraires = document.getElementById('open-horaires');
 const openMap = document.getElementById('open-map');
 const closeBtns = document.querySelectorAll('.popup-content .close-btn');
 const overlays = document.querySelectorAll('.popup-overlay');
+const popupGraph = document.getElementById('popup-graph');
+const openGraph = document.getElementById('open-graph');
 
 // Fonction pour ouvrir une popup
 function openPopup(popup) {
@@ -53,3 +55,9 @@ if (mapIframe) {
         mapIframe.setAttribute('src', `${src}${separator}gestureHandling=greedy`);
     }
 }
+
+// Ouverture graphiques
+if (openGraph) openGraph.addEventListener('click', e => {
+    e.preventDefault();
+    openPopup(popupGraph);
+});
