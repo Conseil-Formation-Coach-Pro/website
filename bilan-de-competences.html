@@ -76,8 +76,11 @@
         </div>
 
         <a href="index.html#hero" class="logo">Amélie Riche</a>
-        <nav>
-            <a href="bilan-de-competences.html" class="active">Bilan de Compétences</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+        <nav class="menu">
+            <a href="bilan-de-competences.html">Bilan de Compétences</a>
             <a href="coaching.html">Coaching</a>
             <a href="formation.html">Formation</a>
             <a href="index.html#contact">Contact</a>
@@ -147,11 +150,11 @@
                         <li>Analyser vos compétences professionnelles et personnelles, aptitudes et motivations.</li>
                         <li>Mieux vous connaître, identifier talents et valeurs.</li>
                         <li>Explorer de nouveaux métiers.</li>
-                        <li>Analyser le marché le l'emploi.</li>
+                        <li>Analyser le marché de l'emploi.</li>
                         <li>Définir un projet professionnel et un plan d’action.</li>
                         <li>Renforcer la connaissance et la confiance en soi.</li>
                         <li>Préparer les prochaines étapes professionnelles ou personnelles.</li>
-                        <li><em>A mes yeux :</em> "le bilan de compétences devrait être réalisé tous les 10 ans".</li>
+                        <li><em>À mes yeux :</em> "le bilan de compétences devrait être réalisé tous les 10 ans".</li>
                     </ul>
                 </div>
 
@@ -163,7 +166,7 @@
                     <ul>
                         <li>Changer de métier ou d’employeur.</li>
                         <li>Réaliser une formation ou une VAE</li>
-                        <li>Se lancer dans l'entrepreunariat</li>
+                        <li>Se lancer dans l'entrepreneuriat</li>
                         <li>Sortir d’une période difficile.</li>
                         <li>Retrouver motivation et envie.</li>
                         <li>Prendre du recul sur son parcours.</li>
@@ -233,9 +236,9 @@
                         <h3 class="formule-nom">Formule Speed</h3>
                         <p class="formule-prix">1 300 €</p>
                         <ul class="benefits">
-                            <li>24h max dont 10h en RDV personnalisé.</li>
+                            <li>24h max dont 10h en RDV personnalisé (hors temps de suivi).</li>
                             <li>Remise d’une synthèse.</li>
-                            <li class="synthese">Financable CPF (selon votre solde) ou autofinancement (5x sans frais)...</li>
+                            <li class="synthese">Finançable CPF (selon votre solde) ou autofinancement (5x sans frais)...</li>
                         </ul>
                     </div>
                 </div>
@@ -246,9 +249,9 @@
                         <h3 class="formule-nom">Formule Classique</h3>
                         <p class="formule-prix">1 950 €</p>
                         <ul class="benefits">
-                            <li>24h max dont 16h en RDV personnalisé.</li>
+                            <li>24h max dont 16h en RDV personnalisé (hors temps de suivi).</li>
                             <li>Remise d’une synthèse.</li>
-                            <li class="synthese">Financable CPF (selon votre solde) ou autofinancement (5x sans frais)...</li>
+                            <li class="synthese">Finançable CPF (selon votre solde) ou autofinancement (5x sans frais)...</li>
                             <br>
                             <li class="syntheseH"><strong>Formule la plus choisie par les clients</strong></li>
                         </ul>
@@ -261,9 +264,9 @@
                         <h3 class="formule-nom">Formule Intense</h3>
                         <p class="formule-prix">2 300 €</p>
                         <ul class="benefits">
-                            <li>24h max dont 20h en RDV personnalisé.</li>
+                            <li>24h max dont 20h en RDV personnalisé (hors temps de suivi).</li>
                             <li>Remise d’une synthèse.</li>
-                            <li class="synthese">Financable CPF (selon votre solde) ou autofinancement (5x sans frais)...</li>
+                            <li class="synthese">Finançable CPF (selon votre solde) ou autofinancement (5x sans frais)...</li>
                         </ul>
                     </div>
                 </div>
@@ -275,8 +278,8 @@
                         <p class="formule-prix">Entre 1 950€ et 2 600€</p>
                         <ul class="benefits">
                             <li>24h max dont 16/18h en RDV personnalisé.</li>
-                            <li>Déplacement possible Haut-de-France & Paris.</li>
-                            <li class="synthese">Financable par votre employeur via une convention tripartite (sur devis).</li>
+                            <li>Déplacement possible dans les Hauts-de-France et à Paris.</li>
+                            <li class="synthese">Finançable par votre employeur via une convention tripartite (tarification sur devis).</li>
                             <li class="synthese">Offre éligible <strong>ANFH</strong></li>
                         </ul>
                     </div>
@@ -292,7 +295,7 @@
                 <div class="deroule-card">
                     <h3>Exemple de déroulement</h3>
                     <h3>Formule classique → <em>la plus choisie</em></h3>
-                    <p><strong>→ 24 heures</strong> dont votre temps de préparation des séances.</p>
+                    <p><strong>→ 24 heures maximum</strong> dont votre temps de préparation des séances.</p>
                     <ul class="benefits">
                         <li class="spaced"><strong>30 min à 1 h</strong> — RDV découverte offert : analyse des besoins, prise de contact, présentation de l’offre.</li>
                         <li><strong>2h</strong> — Analyse du parcours et des objectifs : prendre du recul sur le passé et faire le point sur le présent pour construire le futur.</li>
@@ -303,11 +306,12 @@
                         <li><strong>2h</strong> — Définition du projet professionnel : construire un projet aligné avec vos compétences et aspirations.</li>
                         <li><strong>2h</strong> — Exploration métiers et marché : analyser les opportunités, le marché de l'emploi, réaliser des enquêtes métiers et identifier les options viables.</li>
                         <li><strong>2h</strong> — Plan d’action et synthèse : planifier les étapes concrètes à venir et remettre un document de synthèse.</li>
-                        <li><strong>5 min à 1 h</strong> — RDV suivi téléphonique à 6 mois pour évaluer l’avancement et ajuster si nécessaire.</li>
+                        <li><strong>5 min à 1 h</strong> — RDV suivi téléphonique à 6 mois proposé pour évaluer votre avancement et ajuster si nécessaire.</li>
                     </ul>
+                    <p class="spaced"><strong>→ 16 heures</strong> d'entretien personnalisé hors temps de suivi.</p>
                     <p class="spaced"><em>L’accompagnement est sur mesure : les durées et contenus peuvent être adaptés selon les objectifs définis ensemble.</em></p>
                     <p class="spaced"><em>♥ Suivi entre les séances par messages vocaux ou textuels.</em></p>
-                    <p class="spaced">Tests inclus de qualité CENTRAL TEST ♥, supports numériques fournis, remise en fin de parcours de la synthèse et d’un certificat de réalisation.</p>
+                    <p class="spaced">Tests CENTRAL TEST de qualité professionnelle ♥, supports numériques fournis, remise en fin de parcours de la synthèse et d’un certificat de réalisation.</p>
                     <br>
                     <a  href="https://www.moncompteformation.gouv.fr/espace-prive/html/#/formation/recherche/82517576300028_Offre1950/82517576300028_Offre1950?contexteFormation=ACTIVITE_PROFESSIONNELLE" target="_blank" class="btn-gold">Programme & Infos CPF</a>
                 </div>
@@ -336,7 +340,7 @@
                         <li>Lecture d’aide à la décision (6 choix possibles).</li>
                         <li>Livret numérique séances 6 → 8 (informations pour changements, infos emploi, astuces...).</li>
                         <li>CV vierge, tests 360.</li>
-                        <li>Tests complémentaires sur mesure (envoyés entre les séances, ou montrés en séance).</li>
+                        <li>Tests complémentaires sur mesure (envoyés entre les séances ou montrés en séance).</li>
                         <br>
                         <li class="synthese">Tous les supports de synthèse sont personnalisés en fonction du profil et des objectifs de chaque client.</li>
                     </ul>
@@ -363,7 +367,7 @@
                     <ul class="benefits">
                         <li>Entretiens personnalisés.</li>
                         <li>2 livrets numériques à compléter.</li>
-                        <li>Tests et questionnaires (personnalité, compétences, besoins…) : les méthodes proposées sont sélectionnées en fonction des objectifs et intégrées dans un parcours articulé selon les trois phases légales..</li>
+                        <li>Tests et questionnaires (personnalité, compétences, besoins…) : les méthodes proposées sont sélectionnées en fonction des objectifs et intégrées dans un parcours articulé selon les trois phases légales.</li>
                         <li>Enquêtes métiers.</li>
                         <li>Accès à des ressources métiers avec des sites spécialisés.</li>
                         <li>Synthèse écrite remise au bénéficiaire.</li>
@@ -404,7 +408,7 @@
                     <ul>
                         <li>Rappel sous 10 jours max (objectif 1h à 48h).</li>
                         <li>Entretien offert avant inscription d'une durée de 30 minutes à 1 heure : faire connaissance, déterminer si le bilan vous sera utile, évoquer les formules et l'aspect financement.</li>
-                        <li><strong>Droit de rétractation</strong> : 10 jours (autres financements) ou 14 jours (CPF).</li>
+                        <li><strong>Droit de rétractation</strong> : 10 jours pour les autres financements, 14 jours pour le CPF.</li>
                     </ul>
                 </div>
                 <div class="bilan-card">
@@ -440,7 +444,7 @@
                         <li>119 avenue Lobbedez, 62000 Arras.</li>
                         <li>Parking gratuit en face.</li>
                         <li>Visio possible partout en France.</li>
-                        <li>Langue : français.</li>
+                        <li>Langue : français uniquement.</li>
                         <li>Horaires : lundi → samedi <a href="index.html#contact" class="mentions-link">(cliquer pour plus de détails)</a></li>
                     </ul>
                 </div>
@@ -454,9 +458,9 @@
             <div class="little-asterisque">
                 *(1) Satisfaction au 12/08/2025 : évaluation 4/5-5/5 par 100% des clients dont 94.0% de 5/5
                 <br>
-                *(2) Recommandation au 12/08/2025 : 96.9% de OUI, 3.1% de PAS DE MANIERE SYSTÉMATIQUE
+                *(2) Recommandation au 12/08/2025 : 96.9% de OUI, 3.1% de PAS DE MANIÈRE SYSTÉMATIQUE
                 <br>
-                *(3) Avancement au 12/08/2025 : questionnaire post-bilan (6 mois), 0.00% des clients ont répondu NON à la question : Est-ce que le bilan de compétences vous a été utile ?
+                *(3) Avancement au 12/08/2025 : questionnaire post-bilan (6 mois), 0.00% des clients ont répondu NON à la question : Le bilan de compétences vous a-t-il été utile ?
                 <br><br>
                 Les indicateurs sont collectés via un questionnaire en ligne à la fin du bilan et à 6 mois. En cas de baisse significative, un plan d’amélioration est déclenché.
             </div>

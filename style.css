@@ -2622,9 +2622,25 @@ footer a.mentions-link:hover {
     .formules-section .container {
         max-width: 100%;
     }
+    .intro-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .intro-img {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .intro-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro-text {
+        max-width: 100%;
+    }
 }
-
 
 @media screen and (max-width: 768px) {
     html {
