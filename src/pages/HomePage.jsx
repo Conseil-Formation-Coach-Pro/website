@@ -100,19 +100,18 @@ export default function HomePage() {
       <section className="hero-section" id="hero">
         <div className="hero-overlay" />
         <div className="hero-inner section-shell">
-          <div className="hero-card">
-            <p className="eyebrow">Arras &bull; France enti&egrave;re &bull; Francophonie</p>
+          <div className="hero-card hero-card--soft">
+            <p className="eyebrow">Arras &bull; Lille &bull; Paris &bull; France enti&egrave;re &bull; Francophonie</p>
             <h1>CONSEIL FORMATION COACH PRO</h1>
             <p className="hero-subtitle">Bilan de comp&eacute;tences | Coaching | Formations</p>
             <p className="hero-text">
-              +6000 personnes d&eacute;j&agrave; accompagn&eacute;es dans toute la France, essentiellement par recommandation
+              +7000 personnes d&eacute;j&agrave; accompagn&eacute;es dans toute la France, essentiellement par recommandation
             </p>
             <div className="hero-actions">
               <a href="https://calendly.com/amelieriche62" className="button button-primary">
                 Votre 1er RDV offert
-              </a>
-              <a href="/bilan-de-competences.html" className="button button-secondary">
-                D&eacute;couvrir le bilan
+                <br />
+                <span>Cliquez ici</span>
               </a>
             </div>
           </div>
@@ -122,6 +121,7 @@ export default function HomePage() {
       <section className="section-shell section-block">
         <div className="split-card">
           <div className="content-panel content-panel--bilan">
+            <p className="quality-kicker">Accompagnement hautement qualitatif<sup>*</sup></p>
             <h2>Bilan de Comp&eacute;tences</h2>
             <div className="action-row action-row--bilan">
               <a href="https://calendly.com/amelieriche62" className="button button-primary">Prendre RDV Gratuit</a>
@@ -139,21 +139,25 @@ export default function HomePage() {
                 <span className="stars-inline">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                 <strong>5 / 5</strong>
               </div>
-              <div className="stat-pill stat-pill--inline">
+              <div className="stat-pill stat-pill--inline stat-pill--recommendation">
                 <strong>100 %</strong>
                 <span>de recommandation</span>
               </div>
             </div>
             <div className="info-badge">
               <img src="/cpf-logo.png" alt="Bilan &eacute;ligible au CPF" />
-              <p>
-                Bilan finançable via votre <strong>Compte Personnel de Formation (CPF)</strong>, votre{" "}
-                <strong>employeur</strong>, en <strong>autofinancement</strong> (5x sans frais)...
-              </p>
+              <div>
+                <p>
+                  Bilan finançable via votre <strong>Compte Personnel de Formation (CPF)</strong>, votre{" "}
+                  <strong>employeur</strong>, en <strong>autofinancement</strong> (5x sans frais)...
+                </p>
+                <p className="subtle">Plafond CPF 2026 : 1 600 &euro; sur l&apos;ann&eacute;e.</p>
+              </div>
             </div>
             <div className="price-pill">
               <span>Quatre formules disponibles &bull; de <strong>1 600 &euro;</strong> &agrave; <strong>2 600 &euro;</strong>, selon votre situation</span>
             </div>
+            <p className="quality-note"><strong>*</strong> Accompagnement r&eacute;ellement personnalis&eacute;, adaptation continue des s&eacute;ances, supports soign&eacute;s, synth&egrave;se finale remise en fin de parcours et cadre d&apos;accueil pens&eacute; pour travailler dans de bonnes conditions.</p>
           </div>
           <div className="media-panel media-panel--bilan">
             <img src="/bilan-visuel.png" alt="S&eacute;ance de bilan de comp&eacute;tences" />
@@ -219,7 +223,7 @@ export default function HomePage() {
                 <li>Excellence relationnelle et satisfaction client</li>
                 <li>Intelligence émotionnelle</li>
                 <li>Communication</li>
-                <li>Vente</li>
+                <li>Vente qualitative et efficace</li>
                 <li>Gestion des incivilités et conflits</li>
                 <li>Esprit critique</li>
                 <li>Leadership</li>
