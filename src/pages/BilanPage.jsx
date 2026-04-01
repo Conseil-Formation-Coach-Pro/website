@@ -1,14 +1,12 @@
 import LegacyHtmlContent from "../components/common/LegacyHtmlContent";
 import Seo from "../components/common/Seo";
 import bilanContent from "../content/bilan.html?raw";
+import { seoPages } from "../data/seo";
 
 export default function BilanPage() {
   return (
     <>
-      <Seo
-        title="Bilan de Compétences à Arras - Amélie Riche | Conseil Formation Coach Pro"
-        description="Découvrez les formules de bilan de compétences certifiées Qualiopi à Arras."
-      />
+      <Seo {...seoPages.bilan} />
       <LegacyHtmlContent html={bilanContent} className="bilan-page" />
     </>
   );

@@ -1,14 +1,12 @@
 import LegacyHtmlContent from "../components/common/LegacyHtmlContent";
 import Seo from "../components/common/Seo";
 import bureauContent from "../content/bureau.html?raw";
+import { seoPages } from "../data/seo";
 
 export default function BureauPage() {
   return (
     <>
-      <Seo
-        title="Amélie Riche - Le Bureau à Arras | CONSEIL FORMATION COACH PRO"
-        description="Découvrez en images le bureau d'Amélie Riche à Arras."
-      />
+      <Seo {...seoPages.bureau} />
       <LegacyHtmlContent html={bureauContent} className="bureau-page" />
     </>
   );

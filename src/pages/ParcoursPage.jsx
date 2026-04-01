@@ -1,14 +1,12 @@
 import LegacyHtmlContent from "../components/common/LegacyHtmlContent";
 import Seo from "../components/common/Seo";
 import parcoursContent from "../content/parcours.html?raw";
+import { seoPages } from "../data/seo";
 
 export default function ParcoursPage() {
   return (
     <>
-      <Seo
-        title="Amélie Riche - Parcours | CONSEIL FORMATION COACH PRO"
-        description="Parcours professionnel et expériences clefs d'Amélie Riche."
-      />
+      <Seo {...seoPages.parcours} />
       <LegacyHtmlContent html={parcoursContent} className="parcours-page" />
     </>
   );

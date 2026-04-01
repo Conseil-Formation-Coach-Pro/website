@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Seo from "../components/common/Seo";
+import { seoPages } from "../data/seo";
 
 function getIsoWeekNumber(date) {
   const target = new Date(date.valueOf());
@@ -34,13 +35,13 @@ function HorairesModal({ isOpen, onClose }) {
               {isEvenWeek ? <span className="hours-current">Cette semaine</span> : null}
             </h4>
             <ul>
-              <li><strong>Lundi :</strong> 8h – 20h</li>
-              <li><strong>Mardi :</strong> 8h – 20h</li>
-              <li><strong>Mercredi :</strong> 8h – 20h</li>
-              <li><strong>Jeudi :</strong> 8h – 20h</li>
-              <li><strong>Vendredi :</strong> 8h – 20h</li>
-              <li><strong>Samedi :</strong> Fermé</li>
-              <li><strong>Dimanche :</strong> Fermé</li>
+              <li><strong>Lundi :</strong> 8h - 20h</li>
+              <li><strong>Mardi :</strong> 8h - 20h</li>
+              <li><strong>Mercredi :</strong> 8h - 20h</li>
+              <li><strong>Jeudi :</strong> 8h - 20h</li>
+              <li><strong>Vendredi :</strong> 8h - 20h</li>
+              <li><strong>Samedi :</strong> Ferm&eacute;</li>
+              <li><strong>Dimanche :</strong> Ferm&eacute;</li>
             </ul>
           </div>
           <div className={`hours-column${!isEvenWeek ? " is-active" : ""}`}>
@@ -49,17 +50,17 @@ function HorairesModal({ isOpen, onClose }) {
               {!isEvenWeek ? <span className="hours-current">Cette semaine</span> : null}
             </h4>
             <ul>
-              <li><strong>Lundi :</strong> 9h – 17h30</li>
-              <li><strong>Mardi :</strong> 9h – 17h30</li>
-              <li><strong>Mercredi :</strong> 9h – 17h30</li>
-              <li><strong>Jeudi :</strong> 9h – 17h30</li>
-              <li><strong>Vendredi :</strong> 9h – 17h30</li>
-              <li><strong>Samedi :</strong> 9h – 13h</li>
-              <li><strong>Dimanche :</strong> Fermé</li>
+              <li><strong>Lundi :</strong> 9h - 17h30</li>
+              <li><strong>Mardi :</strong> 9h - 17h30</li>
+              <li><strong>Mercredi :</strong> 9h - 17h30</li>
+              <li><strong>Jeudi :</strong> 9h - 17h30</li>
+              <li><strong>Vendredi :</strong> 9h - 17h30</li>
+              <li><strong>Samedi :</strong> 9h - 13h</li>
+              <li><strong>Dimanche :</strong> Ferm&eacute;</li>
             </ul>
           </div>
         </div>
-        <p className="modal-note">Fermé les jours fériés</p>
+        <p className="modal-note">Ferm&eacute; les jours f&eacute;ri&eacute;s</p>
       </div>
     </div>
   );
@@ -94,27 +95,24 @@ export default function HomePage() {
 
   return (
     <>
-      <Seo
-        title="Amélie Riche - Bilan de Compétences & Coaching (Arras) - CONSEIL FORMATION COACH PRO"
-        description="Coach professionnelle en bilan de compétences certifiée Qualiopi et RNCP7 à Arras. Formations Soft Skills sur mesure pour entreprises ou particuliers."
-      />
+      <Seo {...seoPages.home} />
 
       <section className="hero-section" id="hero">
         <div className="hero-overlay" />
         <div className="hero-inner section-shell">
           <div className="hero-card">
-            <p className="eyebrow">Arras • France entière • Francophonie</p>
+            <p className="eyebrow">Arras &bull; France enti&egrave;re &bull; Francophonie</p>
             <h1>CONSEIL FORMATION COACH PRO</h1>
-            <p className="hero-subtitle">Bilan de compétences | Coaching | Formations</p>
+            <p className="hero-subtitle">Bilan de comp&eacute;tences | Coaching | Formations</p>
             <p className="hero-text">
-              +6000 personnes déjà accompagnées dans toute la France, essentiellement par recommandation
+              +6000 personnes d&eacute;j&agrave; accompagn&eacute;es dans toute la France, essentiellement par recommandation
             </p>
             <div className="hero-actions">
               <a href="https://calendly.com/amelieriche62" className="button button-primary">
                 Votre 1er RDV offert
               </a>
               <a href="/bilan-de-competences.html" className="button button-secondary">
-                Découvrir le bilan
+                D&eacute;couvrir le bilan
               </a>
             </div>
           </div>
@@ -124,7 +122,7 @@ export default function HomePage() {
       <section className="section-shell section-block">
         <div className="split-card">
           <div className="content-panel content-panel--bilan">
-            <h2>Bilan de Compétences</h2>
+            <h2>Bilan de Comp&eacute;tences</h2>
             <div className="action-row action-row--bilan">
               <a href="https://calendly.com/amelieriche62" className="button button-primary">Prendre RDV Gratuit</a>
               <a href="/bilan-de-competences.html#formules-section" className="button button-secondary">Voir les Formules</a>
@@ -132,13 +130,13 @@ export default function HomePage() {
             </div>
             <p>
               Clarifiez votre avenir professionnel : que vous envisagiez une <strong>reconversion</strong>,
-              une <strong>évolution de carrière</strong>, un <strong>changement d’entreprise</strong>,
-              ou le lancement d’un <strong>projet entrepreneurial</strong>, je vous aide à bâtir un plan
-              d’action concret et motivant.
+              une <strong>&eacute;volution de carri&egrave;re</strong>, un <strong>changement d&apos;entreprise</strong>,
+              ou le lancement d&apos;un <strong>projet entrepreneurial</strong>, je vous aide &agrave; b&acirc;tir un plan
+              d&apos;action concret et motivant.
             </p>
             <div className="stat-strip">
               <div className="stat-pill stat-pill--inline">
-                <span className="stars-inline">★★★★★</span>
+                <span className="stars-inline">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                 <strong>5 / 5</strong>
               </div>
               <div className="stat-pill stat-pill--inline">
@@ -147,25 +145,25 @@ export default function HomePage() {
               </div>
             </div>
             <div className="info-badge">
-              <img src="/cpf-logo.png" alt="Bilan éligible au CPF" />
+              <img src="/cpf-logo.png" alt="Bilan &eacute;ligible au CPF" />
               <p>
                 Bilan finançable via votre <strong>Compte Personnel de Formation (CPF)</strong>, votre{" "}
                 <strong>employeur</strong>, en <strong>autofinancement</strong> (5x sans frais)...
               </p>
             </div>
             <div className="price-pill">
-              <span>Quatre formules disponibles • de <strong>1 600 €</strong> à <strong>2 600 €</strong>, selon votre situation</span>
+              <span>Quatre formules disponibles &bull; de <strong>1 600 &euro;</strong> &agrave; <strong>2 600 &euro;</strong>, selon votre situation</span>
             </div>
           </div>
           <div className="media-panel media-panel--bilan">
-            <img src="/bilan-visuel.png" alt="Séance de bilan de compétences" />
+            <img src="/bilan-visuel.png" alt="S&eacute;ance de bilan de comp&eacute;tences" />
           </div>
         </div>
 
         <div className="banner-card">
-          <img src="/qualiopi.png" alt="Certification Qualiopi en bilan de compétences" />
+          <img src="/qualiopi.png" alt="Certification Qualiopi en bilan de comp&eacute;tences" />
           <p>
-            <strong>Certification Qualiopi</strong> délivrée pour le <strong>bilan de compétences</strong>,
+            <strong>Certification Qualiopi</strong> d&eacute;livr&eacute;e pour le <strong>bilan de comp&eacute;tences</strong>,
             garantissant un accompagnement reconnu et finançable.
           </p>
         </div>
@@ -173,7 +171,7 @@ export default function HomePage() {
 
       <section className="section-shell section-block">
         <div className="section-heading">
-          <p className="eyebrow">Services complémentaires</p>
+          <p className="eyebrow">Services compl&eacute;mentaires</p>
           <h2>Coaching et formations</h2>
         </div>
 
@@ -183,19 +181,19 @@ export default function HomePage() {
             <div className="service-card__body">
               <h3>Coaching professionnel</h3>
               <p>
-                <strong>Coach experte</strong> en individuel, en équipe et en organisation, certifiée
-                professionnelle diplômée <strong>RNCP 7 (Bac+5)</strong>, l&apos;une des deux écoles les plus
-                reconnues en France dans le domaine, meilleure note de promotion à la pratique du coaching.
+                <strong>Coach experte</strong> en individuel, en &eacute;quipe et en organisation, certifi&eacute;e
+                professionnelle diplômée <strong>RNCP 7 (Bac+5)</strong>, l&apos;une des deux &eacute;coles les plus
+                reconnues en France dans le domaine, meilleure note de promotion &agrave; la pratique du coaching.
               </p>
               <ul className="list">
-                <li>Se préparer à un <strong>changement professionnel ou personnel</strong></li>
-                <li>Gérer le <strong>stress et les émotions</strong></li>
-                <li>Améliorer ses <strong>relations, compétences & comportements</strong></li>
-                <li>Réussir à franchir un <strong>cap</strong> durant sa carrière</li>
-                <li>Développer des techniques de <strong>communication</strong> adaptées à la situation</li>
+                <li>Se pr&eacute;parer &agrave; un <strong>changement professionnel ou personnel</strong></li>
+                <li>G&eacute;rer le <strong>stress et les &eacute;motions</strong></li>
+                <li>Am&eacute;liorer ses <strong>relations, comp&eacute;tences & comportements</strong></li>
+                <li>R&eacute;ussir &agrave; franchir un <strong>cap</strong> durant sa carri&egrave;re</li>
+                <li>D&eacute;velopper des techniques de <strong>communication</strong> adapt&eacute;es &agrave; la situation</li>
               </ul>
               <div className="note-card">
-                <strong>OFFERT :</strong> 1er rendez-vous découverte de 10 minutes pour définir vos besoins.
+                <strong>OFFERT :</strong> 1er rendez-vous d&eacute;couverte de 10 minutes pour d&eacute;finir vos besoins.
               </div>
               <div className="action-row action-row--services">
                 <a href="/coaching.html" className="text-link">Plus d&apos;infos</a>
@@ -206,14 +204,14 @@ export default function HomePage() {
           </article>
 
           <article className="service-card">
-            <img src="/formation.png" alt="Formations Soft Skills en entreprise" />
+            <img src="/formation.png" alt="Formations soft skills en entreprise" />
             <div className="service-card__body">
               <h3>Formations en entreprise</h3>
               <p>
                 Accompagnement de <strong>tous</strong> les publics et <strong>tous</strong> les métiers avec
                 des techniques pédagogiques basées sur les <strong>neurosciences</strong> et la{" "}
                 <strong>psychologie</strong>. J&apos;interviens pour des <strong>cabinets</strong> de formation
-                reconnus dans l&apos;innovation
+                reconnus dans l&apos;innovation.
               </p>
               <p className="arrow-intro">Des programmes sur mesure en soft skills pour vos équipes :</p>
               <ul className="list">
@@ -240,9 +238,9 @@ export default function HomePage() {
       <section className="section-shell section-block">
         <div className="profile-card">
           <div className="profile-card__left">
-            <img src="/amelie.png" alt="Portrait Amélie Riche" />
+            <img src="/amelie.png" alt="Portrait Am&eacute;lie Riche" />
             <div>
-              <h2>Amélie Riche</h2>
+              <h2>Am&eacute;lie Riche</h2>
               <p className="highlight-text">
                 Gérante de la société <strong>Conseil Formation Coach Pro</strong><br />
                 <span className="arrow-line">Formatrice, Coach, Consultante, Conceptrice</span>
@@ -256,7 +254,7 @@ export default function HomePage() {
 
           <div className="profile-card__right">
             <p className="lead">
-              J’accompagne les salariés, managers et dirigeants à atteindre leurs objectifs à travers des
+              J&apos;accompagne les salariés, managers et dirigeants à atteindre leurs objectifs à travers des
               missions de coaching et de formations individuelles et collectives, dans toute la France et
               francophonie.
             </p>
@@ -309,23 +307,23 @@ export default function HomePage() {
 
           <div className="quote-grid">
             <blockquote>
-              “Amélie est très à l&apos;écoute et met à l’aise rapidement. Grâce à son approche humaine et
-              pédagogique, j’ai pu avancer et construire un plan d’action concret.”
+              &ldquo;Amélie est très à l&apos;écoute et met à l&apos;aise rapidement. Grâce à son approche humaine et
+              pédagogique, j&apos;ai pu avancer et construire un plan d&apos;action concret.&rdquo;
               <cite>Thibaut, 2024</cite>
             </blockquote>
             <blockquote>
-              “Un bel accompagnement pour mon projet professionnel. Coach très professionnelle que je
-              recommande, notamment pour un bilan de compétences afin de changer de vie.”
+              &ldquo;Un bel accompagnement pour mon projet professionnel. Coach très professionnelle que je
+              recommande, notamment pour un bilan de compétences afin de changer de vie.&rdquo;
               <cite>Élodie, 2024</cite>
             </blockquote>
             <blockquote>
-              “Merci beaucoup pour ta patience et ta bienveillance tout au long de ces 3 mois. C’était
-              vraiment top de t’avoir pour m’accompagner dans ce projet.”
+              &ldquo;Merci beaucoup pour ta patience et ta bienveillance tout au long de ces 3 mois. C&apos;était
+              vraiment top de t&apos;avoir pour m&apos;accompagner dans ce projet.&rdquo;
               <cite>Yannick, 2024</cite>
             </blockquote>
             <blockquote>
-              “Amélie m’a ouvert les yeux sur un métier qui me plaît et me donne envie. Cela me conforte
-              dans mes futurs choix.”
+              &ldquo;Amélie m&apos;a ouvert les yeux sur un métier qui me plaît et me donne envie. Cela me conforte
+              dans mes futurs choix.&rdquo;
               <cite>Sébastien, 2025</cite>
             </blockquote>
           </div>
@@ -366,7 +364,7 @@ export default function HomePage() {
                 <span className="contact-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M5 11V6.5A2.5 2.5 0 0 1 7.5 4h9A2.5 2.5 0 0 1 19 6.5V11h1a1 1 0 0 1 1 1v4h-2.09a3 3 0 0 0-5.82 0h-2.18a3 3 0 0 0-5.82 0H3v-4a1 1 0 0 1 1-1h1Zm2 0h10V6.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5V11Zm1 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg>
                 </span>
-                <span>Parking gratuit devant l’immeuble</span>
+                <span>Parking gratuit devant l&apos;immeuble</span>
               </li>
             </ul>
             <div className="action-row action-row--stack">
