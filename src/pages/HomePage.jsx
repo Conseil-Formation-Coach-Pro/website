@@ -121,7 +121,6 @@ export default function HomePage() {
       <section className="section-shell section-block">
         <div className="split-card">
           <div className="content-panel content-panel--bilan">
-            <p className="quality-kicker">Accompagnement hautement qualitatif<sup>*</sup></p>
             <h2>Bilan de Comp&eacute;tences</h2>
             <div className="action-row action-row--bilan">
               <a href="https://calendly.com/amelieriche62" className="button button-primary">Prendre RDV Gratuit</a>
@@ -157,6 +156,7 @@ export default function HomePage() {
             <div className="price-pill">
               <span>Quatre formules disponibles &bull; de <strong>1 600 &euro;</strong> &agrave; <strong>2 600 &euro;</strong>, selon votre situation</span>
             </div>
+            <p className="quality-kicker">Accompagnement hautement qualitatif<sup>*</sup></p>
             <p className="quality-note"><strong>*</strong> Accompagnement r&eacute;ellement personnalis&eacute;, adaptation continue des s&eacute;ances, supports soign&eacute;s, synth&egrave;se finale remise en fin de parcours et cadre d&apos;accueil pens&eacute; pour travailler dans de bonnes conditions.</p>
           </div>
           <div className="media-panel media-panel--bilan">
@@ -166,10 +166,15 @@ export default function HomePage() {
 
         <div className="banner-card">
           <img src="/qualiopi.png" alt="Certification Qualiopi en bilan de comp&eacute;tences" />
+          <div className="banner-card__content">
           <p>
             <strong>Certification Qualiopi</strong> d&eacute;livr&eacute;e pour le <strong>bilan de comp&eacute;tences</strong>,
             garantissant un accompagnement reconnu et finançable.
           </p>
+          <a href="/Certificat-qualiopi.pdf" target="_blank" rel="noreferrer" className="banner-card__link" aria-label="Voir et t&eacute;l&eacute;charger le certificat Qualiopi PDF">
+            📄 T&eacute;l&eacute;charger le certificat complet (PDF)
+          </a>
+        </div>
         </div>
       </section>
 
@@ -242,7 +247,7 @@ export default function HomePage() {
       <section className="section-shell section-block">
         <div className="profile-card">
           <div className="profile-card__left">
-            <img src="/amelie.png" alt="Portrait Am&eacute;lie Riche" />
+            <img src="/amelie2.png" alt="Portrait Am&eacute;lie Riche" />
             <div>
               <h2>Am&eacute;lie Riche</h2>
               <p className="highlight-text">
@@ -304,7 +309,7 @@ export default function HomePage() {
 
         <div className="trust-grid">
           <div className="logo-wall">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((value) => (
+            {[1, 3, 4, 7, 8, 10, 11, 12, 13].map((value) => (
               <img key={value} src={`/logo${value}.png`} alt={`Logo partenaire ${value}`} />
             ))}
           </div>
