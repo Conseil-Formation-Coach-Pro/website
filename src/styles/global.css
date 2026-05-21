@@ -970,6 +970,18 @@ button, input, textarea, select { font: inherit; }
   letter-spacing: 0.04em;
 }
 
+.legacy-content.bilan-page .bilan-audience-badge {
+  width: min(760px, 100%);
+  margin: -14px auto 18px;
+  padding: 12px 18px;
+  border: 1px solid rgba(230, 194, 118, 0.34);
+  border-radius: 999px;
+  color: var(--text);
+  background: rgba(230, 194, 118, 0.08);
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 .legacy-content.bilan-page .page-intro-title .cta-btn {
   justify-self: center;
 }
@@ -1031,6 +1043,19 @@ button, input, textarea, select { font: inherit; }
   margin-bottom: 0;
   display: block;
   line-height: 1.7;
+}
+
+.legacy-content.bilan-page .intro-points li.audience-highlight {
+  padding: 16px 18px 16px 42px;
+  border: 1px solid rgba(230, 194, 118, 0.26);
+  border-radius: 18px;
+  color: var(--text);
+  background: rgba(230, 194, 118, 0.07);
+}
+
+.legacy-content.bilan-page .intro-points li.audience-highlight .bullet {
+  top: 1.45rem;
+  left: 18px;
 }
 
 .legacy-content.bilan-page .intro-points li::before {

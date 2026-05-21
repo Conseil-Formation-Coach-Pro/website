@@ -151,7 +151,7 @@ export const seoPages = {
     ]
   },
   bilan: {
-    title: "Bilan de competences a Arras - Amelie Riche",
+    title: "Bilan de competences pour femmes a Arras - Amelie Riche",
     description:
       "Bilan de competences certifie Qualiopi a Arras avec Amelie Riche : formules Speed, Classique, Intense et Entreprise, finançables selon votre situation.",
     path: "/bilan-de-competences.html",
@@ -160,6 +160,7 @@ export const seoPages = {
     type: "article",
     keywords: [
       "bilan de competences Arras",
+      "bilan de competences femmes",
       "bilan de competences CPF",
       "reconversion professionnelle Arras",
       "coach bilan de competences Arras",
@@ -168,15 +169,15 @@ export const seoPages = {
     structuredData: [
       buildProfessionalServiceSchema({ image: toAbsoluteUrl("/bilan-visuel.png") }),
       buildWebPageSchema({
-        title: "Bilan de competences a Arras - Amelie Riche",
+        title: "Bilan de competences pour femmes a Arras - Amelie Riche",
         description:
-          "Bilan de competences certifie Qualiopi a Arras avec Amelie Riche : formules, financement et accompagnement personnalise.",
+          "Bilan de competences certifie Qualiopi a Arras avec Amelie Riche : accompagnement personnalise pense en priorite pour les femmes.",
         path: "/bilan-de-competences.html"
       }),
       buildServiceSchema({
         name: "Bilan de competences",
         description:
-          "Accompagnement individualise pour clarifier un projet professionnel, une evolution ou une reconversion.",
+          "Accompagnement individualise, pense en priorite pour les femmes, pour clarifier un projet professionnel, une evolution ou une reconversion.",
         path: "/bilan-de-competences.html",
         image: toAbsoluteUrl("/bilan-visuel.png"),
         serviceType: "Bilan de competences"
