@@ -78,7 +78,7 @@ function MapModal({ isOpen, onClose }) {
           <span className="modal-close-icon" aria-hidden="true" />
         </button>
         <iframe
-          title="Localisation du bureau"
+          title="Localisation"
           src="https://www.google.com/maps?q=119%20avenue%20Lobbedez%2062000%20Arras&z=15&output=embed"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
@@ -371,6 +371,12 @@ export default function HomePage() {
               </li>
               <li>
                 <span className="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 4.64 5.08 10.88 6.17 12.16a1 1 0 0 0 1.52 0C13.92 19.88 19 13.64 19 9a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
+                </span>
+                <span>Rendez-vous egalement possibles a partir de 2027 au 42 boulevard Carnot, app. 4, 62000 Arras</span>
+              </li>
+              <li>
+                <span className="contact-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M5 11V6.5A2.5 2.5 0 0 1 7.5 4h9A2.5 2.5 0 0 1 19 6.5V11h1a1 1 0 0 1 1 1v4h-2.09a3 3 0 0 0-5.82 0h-2.18a3 3 0 0 0-5.82 0H3v-4a1 1 0 0 1 1-1h1Zm2 0h10V6.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5V11Zm1 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg>
                 </span>
                 <span>Parking gratuit devant l&apos;immeuble</span>
@@ -389,7 +395,7 @@ export default function HomePage() {
 
           <div className="contact-card__right">
             <p className="eyebrow">Accès & localisation</p>
-            <h2 className="contact-title">Localisez le bureau</h2>
+            <h2 className="contact-title">Localisation</h2>
             <div className="contact-visuals">
               <div className="map-visual-group">
                 <button type="button" className="visual-button visual-button--map" onClick={() => setIsMapOpen(true)}>

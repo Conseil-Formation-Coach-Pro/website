@@ -13,6 +13,13 @@ const BUSINESS_ADDRESS = {
   addressLocality: "Arras",
   addressCountry: "FR"
 };
+const BUSINESS_SECONDARY_ADDRESS = {
+  "@type": "PostalAddress",
+  streetAddress: "42 boulevard Carnot, app. 4",
+  postalCode: "62000",
+  addressLocality: "Arras",
+  addressCountry: "FR"
+};
 const SAME_AS = ["https://www.linkedin.com/in/amelie-riche-00b28a91"];
 
 function toAbsoluteUrl(path = "/") {
@@ -28,7 +35,7 @@ function buildProfessionalServiceSchema({ image = DEFAULT_IMAGE } = {}) {
     url: SITE_URL,
     telephone: BUSINESS_PHONE,
     email: BUSINESS_EMAIL,
-    address: BUSINESS_ADDRESS,
+    address: [BUSINESS_ADDRESS, BUSINESS_SECONDARY_ADDRESS],
     areaServed: {
       "@type": "Country",
       name: "France"
@@ -263,15 +270,15 @@ export const seoPages = {
     ]
   },
   bureau: {
-    title: "Le bureau a Arras - Amelie Riche",
+    title: "Photos a Arras - Amelie Riche",
     description:
-      "Decouvrez le bureau d'Amelie Riche a Arras : accessibilite, localisation, photos du cabinet et environnement d'accompagnement.",
+      "Decouvrez les photos d'Amelie Riche a Arras : accessibilite, localisation, cabinet et environnement d'accompagnement.",
     path: "/bureau.html",
     image: toAbsoluteUrl("/bureau-accueil.png"),
-    imageAlt: "Bureau d'Amelie Riche a Arras",
+    imageAlt: "Photos d'Amelie Riche a Arras",
     type: "article",
     keywords: [
-      "bureau Amelie Riche",
+      "photos Amelie Riche",
       "cabinet coaching Arras",
       "adresse Amelie Riche Arras",
       "bilan de competences Arras adresse",
@@ -280,14 +287,14 @@ export const seoPages = {
     structuredData: [
       buildProfessionalServiceSchema({ image: toAbsoluteUrl("/bureau-accueil.png") }),
       buildWebPageSchema({
-        title: "Le bureau a Arras - Amelie Riche",
+        title: "Photos a Arras - Amelie Riche",
         description:
-          "Decouvrez le bureau d'Amelie Riche a Arras, son accessibilite et sa localisation.",
+          "Decouvrez les photos d'Amelie Riche a Arras, son accessibilite et sa localisation.",
         path: "/bureau.html"
       }),
       buildBreadcrumbSchema([
         { name: "Accueil", path: "/" },
-        { name: "Bureau", path: "/bureau.html" }
+        { name: "Photos", path: "/bureau.html" }
       ])
     ]
   },
