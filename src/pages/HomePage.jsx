@@ -144,7 +144,6 @@ export default function HomePage() {
               </div>
             </div>
             <div className="info-badge">
-              <img src="/cpf-logo.png" alt="Bilan &eacute;ligible au CPF" />
               <div>
                 <p>
                   Bilan finançable via votre <strong>Compte Personnel de Formation (CPF)</strong>, votre{" "}
@@ -170,9 +169,6 @@ export default function HomePage() {
             <strong>Certification Qualiopi</strong> d&eacute;livr&eacute;e pour le <strong>bilan de comp&eacute;tences</strong>,
             garantissant un accompagnement reconnu et finançable.
           </p>
-          <a href="/Certificat-qualiopi.pdf" target="_blank" rel="noreferrer" className="banner-card__link" aria-label="Voir et t&eacute;l&eacute;charger le certificat Qualiopi PDF">
-            📄 T&eacute;l&eacute;charger le certificat complet (PDF)
-          </a>
         </div>
         </div>
       </section>
