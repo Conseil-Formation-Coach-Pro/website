@@ -165,7 +165,6 @@ export default function HomePage() {
         </div>
 
         <div className="banner-card">
-          <img src="/qualiopi.png" alt="Certification Qualiopi en bilan de comp&eacute;tences" />
           <div className="banner-card__content">
           <p>
             <strong>Certification Qualiopi</strong> d&eacute;livr&eacute;e pour le <strong>bilan de comp&eacute;tences</strong>,
@@ -379,7 +378,7 @@ export default function HomePage() {
                 <span className="contact-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M5 11V6.5A2.5 2.5 0 0 1 7.5 4h9A2.5 2.5 0 0 1 19 6.5V11h1a1 1 0 0 1 1 1v4h-2.09a3 3 0 0 0-5.82 0h-2.18a3 3 0 0 0-5.82 0H3v-4a1 1 0 0 1 1-1h1Zm2 0h10V6.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5V11Zm1 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg>
                 </span>
-                <span>Parking gratuit devant l&apos;immeuble</span>
+                <span>Une place de parking offerte dans la r&eacute;sidence sur simple demande</span>
               </li>
             </ul>
             <div className="action-row action-row--stack">
