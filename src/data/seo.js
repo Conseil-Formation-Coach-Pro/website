@@ -8,14 +8,14 @@ const BUSINESS_PHONE = "+33 6 99 75 66 61";
 const BUSINESS_EMAIL = "coach@amelieriche.fr";
 const BUSINESS_ADDRESS = {
   "@type": "PostalAddress",
-  streetAddress: "119 avenue Lobbedez",
+  streetAddress: "42 boulevard Carnot, app. 4",
   postalCode: "62000",
   addressLocality: "Arras",
   addressCountry: "FR"
 };
 const BUSINESS_SECONDARY_ADDRESS = {
   "@type": "PostalAddress",
-  streetAddress: "42 boulevard Carnot, app. 4",
+  streetAddress: "119 avenue Lobbedez",
   postalCode: "62000",
   addressLocality: "Arras",
   addressCountry: "FR"
@@ -132,7 +132,7 @@ export const seoPages = {
   home: {
     title: "Amelie Riche - Bilan de competences, coaching et formations a Arras",
     description:
-      "Bilan de competences certifie Qualiopi, coaching professionnel et formations soft skills a Arras avec Amelie Riche. Accompagnement en presentiel et a distance dans toute la France.",
+      "Bilan de competences, coaching professionnel et formations soft skills a Arras avec Amelie Riche. Demarche de certification Qualiopi engagee et prevue pour fin 2026.",
     path: "/",
     image: toAbsoluteUrl("/amelie.png"),
     imageAlt: "Amelie Riche, coach professionnelle et formatrice a Arras",
@@ -152,7 +152,7 @@ export const seoPages = {
       buildWebPageSchema({
         title: "Amelie Riche - Bilan de competences, coaching et formations a Arras",
         description:
-          "Bilan de competences certifie Qualiopi, coaching professionnel et formations soft skills a Arras avec Amelie Riche.",
+          "Bilan de competences, coaching professionnel et formations soft skills a Arras avec Amelie Riche.",
         path: "/"
       })
     ]
@@ -160,7 +160,7 @@ export const seoPages = {
   bilan: {
     title: "Bilan de competences tout public a Arras - Amelie Riche",
     description:
-      "Bilan de competences certifie Qualiopi a Arras avec Amelie Riche : formules Speed, Classique, Intense et Entreprise, finançables selon votre situation.",
+      "Bilan de competences a Arras avec Amelie Riche : formules Speed, Classique, Intense et Entreprise, financables selon votre situation.",
     path: "/bilan-de-competences.html",
     image: toAbsoluteUrl("/bilan-visuel.png"),
     imageAlt: "Bilan de competences a Arras avec Amelie Riche",
@@ -178,7 +178,7 @@ export const seoPages = {
       buildWebPageSchema({
         title: "Bilan de competences tout public a Arras - Amelie Riche",
         description:
-          "Bilan de competences certifie Qualiopi a Arras avec Amelie Riche : accompagnement personnalise tout public.",
+          "Bilan de competences a Arras avec Amelie Riche : accompagnement personnalise tout public.",
         path: "/bilan-de-competences.html"
       }),
       buildServiceSchema({
@@ -330,7 +330,7 @@ export const seoPages = {
   legal: {
     title: "Mentions legales - Amelie Riche",
     description:
-      "Mentions legales, informations administratives, accessibilite, protection des donnees et certification Qualiopi d'Amelie Riche.",
+      "Mentions legales, informations administratives, accessibilite, protection des donnees et demarche de certification Qualiopi d'Amelie Riche.",
     path: "/mentions-legales.html",
     image: toAbsoluteUrl("/admin-legal.png"),
     imageAlt: "Mentions legales et informations administratives",

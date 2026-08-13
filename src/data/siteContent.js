@@ -29,7 +29,7 @@ export const socialLinks = [
 export const contactDetails = [
   { label: "Téléphone", value: "06 99 75 66 61", href: "tel:+33699756661" },
   { label: "Email", value: "coach@amelieriche.fr", href: "mailto:coach@amelieriche.fr" },
-  { label: "Adresse", value: "119 avenue Lobbedez, 62000 Arras. Rendez-vous egalement possibles a partir de 2027 au 42 boulevard Carnot, app. 4, 62000 Arras", href: "https://maps.google.com/?q=119+avenue+Lobbedez+62000+Arras" }
+  { label: "Adresse RDV", value: "119 avenue Lobbedez, 62000 Arras jusqu'a fin 2026. Adresse juridique : 42 boulevard Carnot, app. 4, 62000 Arras", href: "https://maps.google.com/?q=119+avenue+Lobbedez+62000+Arras" }
 ];
 
 export const companyFacts = [

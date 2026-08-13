@@ -2742,7 +2742,7 @@ button, input, textarea, select { font: inherit; }
 }
 
 .legacy-content.bilan-page .benefits li.syntheseH::before {
-  content: "♥";
+  content: "\2665";
   color: #ff7db8;
   font-size: 1rem;
 }

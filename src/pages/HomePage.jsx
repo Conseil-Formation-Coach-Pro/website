@@ -147,13 +147,13 @@ export default function HomePage() {
               <div>
                 <p>
                   Bilan finançable via votre <strong>Compte Personnel de Formation (CPF)</strong>, votre{" "}
-                  <strong>employeur</strong>, en <strong>autofinancement</strong> (5x sans frais)...
+                  <strong>employeur</strong>, en <strong>autofinancement</strong> (3x sans frais)...
                 </p>
-                <p className="subtle">Plafond CPF 2026 : 1 600 &euro; sur l&apos;ann&eacute;e.</p>
+                <p className="subtle">Tarifs bilan 2026 : de 1 500 &euro; &agrave; 2 300 &euro; selon la formule.</p>
               </div>
             </div>
             <div className="price-pill">
-              <span>Quatre formules disponibles &bull; de <strong>1 600 &euro;</strong> &agrave; <strong>2 600 &euro;</strong>, selon votre situation</span>
+              <span>Quatre formules disponibles &bull; de <strong>1 500 &euro;</strong> &agrave; <strong>2 300 &euro;</strong>, selon votre situation</span>
             </div>
             <p className="quality-kicker">Accompagnement hautement qualitatif<sup>*</sup></p>
             <p className="quality-note"><strong>*</strong> Accompagnement r&eacute;ellement personnalis&eacute;, adaptation continue des s&eacute;ances, supports soign&eacute;s, synth&egrave;se finale remise en fin de parcours et cadre d&apos;accueil pens&eacute; pour travailler dans de bonnes conditions.</p>
@@ -165,11 +165,10 @@ export default function HomePage() {
 
         <div className="banner-card">
           <div className="banner-card__content">
-          <p>
-            <strong>Certification Qualiopi</strong> d&eacute;livr&eacute;e pour le <strong>bilan de comp&eacute;tences</strong>,
-            garantissant un accompagnement reconnu et finançable.
-          </p>
-        </div>
+            <p>
+              <strong>Une expertise qualit&eacute; &eacute;prouv&eacute;e :</strong> Notre activit&eacute; a pr&eacute;c&eacute;demment &eacute;t&eacute; exerc&eacute;e au sein d&apos;une autre structure juridique, titulaire de la certification Qualiopi jusqu&apos;en fin 2026. Dans le cadre de l&apos;&eacute;volution de notre activit&eacute; et d&apos;un changement d&apos;adresse, une nouvelle structure juridique a &eacute;t&eacute; cr&eacute;&eacute;e et une nouvelle d&eacute;marche de certification Qualiopi est actuellement engag&eacute;e et pr&eacute;vue pour fin 2026.
+            </p>
+          </div>
         </div>
       </section>
 
