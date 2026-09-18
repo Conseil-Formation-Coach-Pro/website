@@ -139,7 +139,7 @@ export default function HomePage() {
                 <strong>5 / 5</strong>
               </div>
               <div className="stat-pill stat-pill--inline stat-pill--recommendation">
-                <strong>100 %</strong>
+                <strong>98 %</strong>
                 <span>de recommandation</span>
               </div>
             </div>
@@ -169,6 +169,10 @@ export default function HomePage() {
             <p>
               <strong>Une expertise qualit&eacute; &eacute;prouv&eacute;e :</strong> Notre activit&eacute; a pr&eacute;c&eacute;demment &eacute;t&eacute; exerc&eacute;e au sein d&apos;une autre structure juridique, titulaire de la certification Qualiopi jusqu&apos;en fin 2026. Dans le cadre de l&apos;&eacute;volution de notre activit&eacute; et d&apos;un changement d&apos;adresse, une nouvelle structure juridique a &eacute;t&eacute; cr&eacute;&eacute;e et une nouvelle d&eacute;marche de certification Qualiopi est actuellement engag&eacute;e et pr&eacute;vue pour fin 2026.
             </p>
+            <a className="certificate-link" href="/Certificat-qualiopi.pdf" target="_blank" rel="noopener noreferrer" title="PDF — nouvel onglet">
+              <span>Consulter le certificat Qualiopi (PDF)</span>
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
       </section>
