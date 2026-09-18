@@ -164,6 +164,7 @@ export default function HomePage() {
         </div>
 
         <div className="banner-card">
+          <img src="/qualiopi.png" alt="Logo Qualiopi" />
           <div className="banner-card__content">
             <p>
               <strong>Une expertise qualit&eacute; &eacute;prouv&eacute;e :</strong> Notre activit&eacute; a pr&eacute;c&eacute;demment &eacute;t&eacute; exerc&eacute;e au sein d&apos;une autre structure juridique, titulaire de la certification Qualiopi jusqu&apos;en fin 2026. Dans le cadre de l&apos;&eacute;volution de notre activit&eacute; et d&apos;un changement d&apos;adresse, une nouvelle structure juridique a &eacute;t&eacute; cr&eacute;&eacute;e et une nouvelle d&eacute;marche de certification Qualiopi est actuellement engag&eacute;e et pr&eacute;vue pour fin 2026.

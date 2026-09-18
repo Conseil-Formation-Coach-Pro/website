@@ -417,6 +417,14 @@ button, input, textarea, select { font: inherit; }
 }
 .banner-card img {
   width: 178px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+@media (max-width: 640px) {
+  .banner-card {
+    flex-direction: column;
+  }
 }
 .price-pill {
   display: flex;
@@ -961,6 +969,8 @@ button, input, textarea, select { font: inherit; }
 }
 
 .legacy-content.bilan-page .page-intro-title {
+  display: grid;
+  gap: 12px;
   margin-bottom: 18px;
   text-align: center;
 }
@@ -3360,4 +3370,117 @@ button, input, textarea, select { font: inherit; }
     padding-bottom: 0;
     line-height: 1.28;
   }
+}
+
+/* Qualiopi and participant feedback: introduction to the skills assessment. */
+.legacy-content.bilan-page .quality-overview {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.8fr);
+  gap: 26px 38px;
+  width: min(1180px, calc(100% - 32px));
+  margin: 24px auto 0;
+  padding: 32px;
+  border: 1px solid var(--line-strong);
+  border-radius: 28px;
+  background: radial-gradient(ellipse at 0% 0%, rgba(230, 194, 118, 0.14), transparent 60%), #0d182a;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18);
+}
+.quality-overview::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 360px;
+  height: 360px;
+  top: -200px;
+  left: -130px;
+  border: 1px solid rgba(230, 194, 118, 0.16);
+  border-radius: 50%;
+  box-shadow: 0 0 0 26px rgba(230, 194, 118, 0.035), 0 0 0 66px rgba(230, 194, 118, 0.025);
+  pointer-events: none;
+}
+.quality-overview__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-right: 32px;
+  border-right: 1px solid var(--line-strong);
+}
+.quality-overview__eyebrow {
+  color: var(--accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.quality-overview__logo {
+  display: block;
+  width: min(260px, 100%);
+  padding: 17px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 180ms ease;
+}
+.quality-overview__logo img { width: 100%; height: auto; }
+.quality-overview__logo:hover { transform: translateY(-3px); }
+.quality-overview__detail { font-size: 0.8rem; color: var(--accent); }
+.quality-overview__detail span { margin-left: 8px; }
+.legacy-content.bilan-page .quality-overview__headline {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  line-height: 1.35;
+  font-weight: 500;
+}
+.quality-overview__headline em { color: var(--accent); font-style: normal; }
+.legacy-content.bilan-page .quality-overview__subtitle {
+  margin: 10px 0 20px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.legacy-content.bilan-page .quality-overview .bilan-stats {
+  width: 100%;
+  margin: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.legacy-content.bilan-page .quality-overview .stat {
+  padding: 14px 8px;
+  border-radius: 14px;
+  background: linear-gradient(160deg, rgba(230, 194, 118, 0.08), rgba(255, 255, 255, 0.015));
+}
+.quality-overview__symbol {
+  display: block;
+  color: var(--accent);
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.legacy-content.bilan-page .quality-overview .stat .value { font-size: clamp(1.45rem, 2.8vw, 2.2rem); }
+.legacy-content.bilan-page .quality-overview .stat .label { font-size: 0.78rem; overflow-wrap: anywhere; }
+.legacy-content.bilan-page .quality-overview__note {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+.quality-overview__note a { text-decoration: underline; text-underline-offset: 3px; }
+.quality-overview a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+#certification-qualiopi { scroll-margin-top: 130px; }
+@media (max-width: 760px) {
+  .legacy-content.bilan-page .quality-overview { grid-template-columns: 1fr; padding: 24px 18px; gap: 24px; }
+  .quality-overview__brand { padding: 0 0 24px; border-right: 0; border-bottom: 1px solid var(--line-strong); }
+  .quality-overview__logo { width: 230px; }
+  .quality-overview__results { text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .quality-overview__logo { transition: none; }
+  .quality-overview__logo:hover { transform: none; }
 }

@@ -1,5 +1,5 @@
 @echo off
 cd /d "%~dp0"
-start "Amelie Riche Local Dev Server" cmd /k "npm run dev"
+start "Amelie Riche Local Dev Server" cmd /k "npm.cmd run dev"
 timeout /t 3 /nobreak >nul
 start "" "http://localhost:5173"
