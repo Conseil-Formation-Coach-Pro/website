@@ -8,13 +8,6 @@ const BUSINESS_PHONE = "+33 6 99 75 66 61";
 const BUSINESS_EMAIL = "coach@amelieriche.fr";
 const BUSINESS_ADDRESS = {
   "@type": "PostalAddress",
-  streetAddress: "42 boulevard Carnot, app. 4",
-  postalCode: "62000",
-  addressLocality: "Arras",
-  addressCountry: "FR"
-};
-const BUSINESS_SECONDARY_ADDRESS = {
-  "@type": "PostalAddress",
   streetAddress: "119 avenue Lobbedez",
   postalCode: "62000",
   addressLocality: "Arras",
@@ -35,7 +28,7 @@ function buildProfessionalServiceSchema({ image = DEFAULT_IMAGE } = {}) {
     url: SITE_URL,
     telephone: BUSINESS_PHONE,
     email: BUSINESS_EMAIL,
-    address: [BUSINESS_ADDRESS, BUSINESS_SECONDARY_ADDRESS],
+    address: BUSINESS_ADDRESS,
     areaServed: {
       "@type": "Country",
       name: "France"
@@ -94,7 +87,15 @@ function buildServiceSchema({ name, description, path, image, serviceType }) {
       name: BUSINESS_NAME,
       url: SITE_URL,
       telephone: BUSINESS_PHONE,
-      email: BUSINESS_EMAIL
+      email: BUSINESS_EMAIL,
+      ...(serviceType === "Bilan de competences" ? {
+        address: BUSINESS_ADDRESS,
+        identifier: [
+          { "@type": "PropertyValue", propertyID: "SIREN", value: "825175763" },
+          { "@type": "PropertyValue", propertyID: "SIRET", value: "82517576300028" },
+          { "@type": "PropertyValue", propertyID: "NDA", value: "32620323262" }
+        ]
+      } : {})
     }
   };
 }
@@ -132,7 +133,7 @@ export const seoPages = {
   home: {
     title: "Amelie Riche - Bilan de competences, coaching et formations a Arras",
     description:
-      "Bilan de competences, coaching professionnel et formations soft skills a Arras avec Amelie Riche. Demarche de certification Qualiopi engagee et prevue pour fin 2026.",
+      "Bilan de competences, coaching professionnel et formations soft skills a Arras avec Amelie Riche. Bilans de competences realises par un prestataire certifie Qualiopi.",
     path: "/",
     image: toAbsoluteUrl("/amelie.png"),
     imageAlt: "Amelie Riche, coach professionnelle et formatrice a Arras",
@@ -330,7 +331,7 @@ export const seoPages = {
   legal: {
     title: "Mentions legales - Amelie Riche",
     description:
-      "Mentions legales, informations administratives, accessibilite, protection des donnees et demarche de certification Qualiopi d'Amelie Riche.",
+      "Mentions legales, informations administratives, accessibilite, protection des donnees et certification Qualiopi du prestataire des bilans de competences d'Amelie Riche.",
     path: "/mentions-legales.html",
     image: toAbsoluteUrl("/admin-legal.png"),
     imageAlt: "Mentions legales et informations administratives",

@@ -167,7 +167,7 @@ export default function HomePage() {
           <img src="/qualiopi.png" alt="Logo Qualiopi" />
           <div className="banner-card__content">
             <p>
-              <strong>Une expertise qualit&eacute; &eacute;prouv&eacute;e :</strong> Notre activit&eacute; a pr&eacute;c&eacute;demment &eacute;t&eacute; exerc&eacute;e au sein d&apos;une autre structure juridique, titulaire de la certification Qualiopi jusqu&apos;en fin 2026. Dans le cadre de l&apos;&eacute;volution de notre activit&eacute; et d&apos;un changement d&apos;adresse, une nouvelle structure juridique a &eacute;t&eacute; cr&eacute;&eacute;e et une nouvelle d&eacute;marche de certification Qualiopi est actuellement engag&eacute;e et pr&eacute;vue pour fin 2026.
+              <strong>Un prestataire certifié Qualiopi pour votre bilan :</strong> La certification qualité a été délivrée au titre de la catégorie d’action suivante : bilans de compétences. Les bilans sont actuellement réalisés par le prestataire identifié sous le SIRET 825 175 763 00028, au 119 avenue Lobbedez, 62000 Arras. Le certificat publié couvre la période du 26 décembre 2023 au 25 décembre 2026, sous réserve du maintien de la certification.
             </p>
             <a className="certificate-link" href="/Certificat-qualiopi.pdf" target="_blank" rel="noopener noreferrer" title="PDF — nouvel onglet">
               <span>Consulter le certificat Qualiopi (PDF)</span>
@@ -367,12 +367,6 @@ export default function HomePage() {
                   <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 4.64 5.08 10.88 6.17 12.16a1 1 0 0 0 1.52 0C13.92 19.88 19 13.64 19 9a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
                 </span>
                 <span>119 avenue Lobbedez, 62000 Arras</span>
-              </li>
-              <li>
-                <span className="contact-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 4.64 5.08 10.88 6.17 12.16a1 1 0 0 0 1.52 0C13.92 19.88 19 13.64 19 9a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
-                </span>
-                <span>Rendez-vous egalement possibles a partir de 2027 au 42 boulevard Carnot, app. 4, 62000 Arras</span>
               </li>
               <li>
                 <span className="contact-icon" aria-hidden="true">
