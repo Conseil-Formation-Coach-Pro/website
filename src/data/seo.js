@@ -8,7 +8,7 @@ const BUSINESS_PHONE = "+33 6 99 75 66 61";
 const BUSINESS_EMAIL = "coach@amelieriche.fr";
 const BUSINESS_ADDRESS = {
   "@type": "PostalAddress",
-  streetAddress: "119 avenue Lobbedez",
+  streetAddress: "42 boulevard Carnot, appartement 4",
   postalCode: "62000",
   addressLocality: "Arras",
   addressCountry: "FR"
